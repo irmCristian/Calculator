@@ -29,13 +29,15 @@ for(let i = 0; i < numbers.length; i++) {
 
 function getFirstValue (number) {
     firstValue = firstValue + number
-    results.innerHTML = parseFloat(firstValue)
+    results.innerHTML = firstValue
+    firstValue =+ firstValue //fara + daca fac 2+3 rezultatul va fi 23 in loc de 5(convert string to number)
 }
 
 function getSecondValue (number) {
     if (firstValue != '' && sign != '') {
         secondValue = secondValue + number
-        results.innerHTML = parseFloat(secondValue)    
+        results.innerHTML = secondValue
+        secondValue =+ secondValue //fara + daca fac 2+3 rezultatul va fi 23 in loc de 5(convert string to number)
     }
 }
 
